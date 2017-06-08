@@ -16,6 +16,7 @@ namespace WinBinFex
         enum fileType { BIN, FEX, OTHER };
 
         fileType file_type;
+        string exit_path;
 
         /******************************************************************************/
         // Form creation
@@ -27,6 +28,7 @@ namespace WinBinFex
             this.Show();
             this.BringToFront();
 
+            exit_path = "";
             file_type = fileType.OTHER;
             label_status.ForeColor = System.Drawing.Color.Black;
             label_status.Text = "Status: Please, insert a BIN or FEX file";
@@ -88,7 +90,7 @@ namespace WinBinFex
             string filePath = "";
             string exportPath = "";
 
-            filePath = textBox_file_path.Text;
+            filePath = "\"" + textBox_file_path.Text + "\"";
 
             if (file_type == fileType.BIN)
             {
@@ -96,7 +98,10 @@ namespace WinBinFex
                 saveFileDialog.Filter = "FEX File|*.fex";
                 saveFileDialog.FileName = "script.fex";
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                    exportPath = saveFileDialog.FileName;
+                {
+                    exit_path = saveFileDialog.FileName;
+                    exportPath = "\"" + exit_path + "\"";
+                }
 
                 systemCall("bin\\fexc -I bin -O fex " + filePath + " " + exportPath);
             }
@@ -106,7 +111,10 @@ namespace WinBinFex
                 saveFileDialog.Filter = "BIN File|*.bin";
                 saveFileDialog.FileName = "script.bin";
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                    exportPath = saveFileDialog.FileName;
+                {
+                    exit_path = saveFileDialog.FileName;
+                    exportPath = "\"" + exit_path + "\"";
+                }
 
                 systemCall("bin\\fexc -I fex -O bin " + filePath + " " + exportPath);
             }
@@ -151,6 +159,8 @@ namespace WinBinFex
                         label_status.ForeColor = System.Drawing.Color.ForestGreen;
                         label_status.Text = "Status: Success";
                     }));
+
+                    Process.Start(Path.GetDirectoryName(exit_path));
                 }
             }
             catch (Exception ex)
