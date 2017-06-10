@@ -31,7 +31,7 @@ namespace WinBinFex
             exit_path = "";
             file_type = fileType.OTHER;
             label_status.ForeColor = System.Drawing.Color.Black;
-            label_status.Text = "Status: Please, insert a BIN or FEX file";
+            label_status.Text = "Status: Please, insert a BIN or FEX file, then press Convert button";
         }
 
         /******************************************************************************/

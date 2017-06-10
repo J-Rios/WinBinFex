@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button_convert = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.textBox_file_path = new System.Windows.Forms.TextBox();
@@ -88,9 +89,9 @@
             this.label3.Location = new System.Drawing.Point(29, 37);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(504, 17);
+            this.label3.Size = new System.Drawing.Size(508, 17);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Application that convert BIN to Fex and FEX to BIN files of Allwinner Sunxi SoCs";
+            this.label3.Text = "Application that convert BIN to FEX and FEX to BIN files of Allwinner Sunxi SoCs";
             // 
             // label_status
             // 
@@ -122,13 +123,14 @@
             this.Controls.Add(this.button_explorer);
             this.Controls.Add(this.textBox_file_path);
             this.Controls.Add(this.button_convert);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(681, 373);
             this.MinimumSize = new System.Drawing.Size(681, 373);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sunxi Tools for Windows";
+            this.Text = "WinBinFex (Sunxi-Tools bin2fex & fex2bin for Windows)";
             this.ResumeLayout(false);
             this.PerformLayout();
 

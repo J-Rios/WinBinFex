@@ -1,1 +1,8 @@
 c:\users\jose_\documents\visual studio 2015\Projects\WinBinFex\WinBinFex\bin\Debug\WinBinFex.exe.config
+C:\Users\jose_\Documents\Visual Studio 2015\Projects\WinBinFex\WinBinFex\bin\Debug\WinBinFex.exe
+C:\Users\jose_\Documents\Visual Studio 2015\Projects\WinBinFex\WinBinFex\bin\Debug\WinBinFex.pdb
+C:\Users\jose_\Documents\Visual Studio 2015\Projects\WinBinFex\WinBinFex\obj\Debug\WinBinFex.Form1.resources
+C:\Users\jose_\Documents\Visual Studio 2015\Projects\WinBinFex\WinBinFex\obj\Debug\WinBinFex.Properties.Resources.resources
+C:\Users\jose_\Documents\Visual Studio 2015\Projects\WinBinFex\WinBinFex\obj\Debug\WinBinFex.csproj.GenerateResource.Cache
+C:\Users\jose_\Documents\Visual Studio 2015\Projects\WinBinFex\WinBinFex\obj\Debug\WinBinFex.exe
+C:\Users\jose_\Documents\Visual Studio 2015\Projects\WinBinFex\WinBinFex\obj\Debug\WinBinFex.pdb
